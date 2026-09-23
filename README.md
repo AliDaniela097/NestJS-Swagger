@@ -116,3 +116,27 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+# API de Productos — NestJS + Swagger
+
+API REST de catálogo de productos con documentación automática OpenAPI.
+Práctica Semana 1 — Integración de Sistemas (PUCE).
+
+## Demo en producción
+
+- **Swagger UI:** https://nestjs-swagger-thhx.onrender.com/api/docs
+- **Endpoint:** https://nestjs-swagger-thhx.onrender.com/api/v1/productos
+
+> Desplegado en el plan gratuito de Render: si el servicio no recibe
+> peticiones por un tiempo, se suspende. La primera petición puede
+> tardar entre 30 y 60 segundos mientras arranca de nuevo.
+> Es el comportamiento esperado del plan, no un error.
+
+## Endpoints
+
+| Verbo | Ruta                     | Respuestas      |
+|-------|--------------------------|-----------------|
+| GET   | /api/v1/productos        | 200             |
+| GET   | /api/v1/productos/{id}   | 200 / 400 / 404 |
+
+El contrato completo está en [contrato.md](contrato.md).
